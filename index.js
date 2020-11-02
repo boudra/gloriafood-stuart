@@ -11,7 +11,7 @@ async function getGlobalFoodOrders() {
     url: "https://pos.globalfoodsoft.com/pos/order/pop",
     method: "post",
     headers: {
-      Authorization: "aXoY5SJEviW6jVB9g",
+      Authorization: process.env.GLOBAL_FOOD_KEY,
       Accept: "application/json",
       "Glf-Api-Version": "2",
     },
